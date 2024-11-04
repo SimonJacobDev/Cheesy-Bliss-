@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,97 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav2{
+  color: aqua;
+}
+
+h1{
+  font-size: 20px !important;
+}
+
+.display{
+  margin-left: 100px;
+}
+
+.flex-container{
+  display: flex;
+}
+
+select{
+  box-shadow: none !important;
+  border: 1px solid black !important;
+}
+
+.pizza-card {
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.pizza-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+.pizza-image {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.pizza-image:hover {
+  transform: scale(1.05);
+}
+
+.label-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.price-text {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fafafa;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: #3498db;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+

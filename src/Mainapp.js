@@ -3,25 +3,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Homescreen from './screens/Homescreen';
 
-function App() {
+function MainApp() {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (pizza, variant, quantity) => {
-    const newItem = {
-      name: pizza.name,
+    const item = {
+      ...pizza,
       variant,
-      quantity,
-      price: pizza.prices[0][variant] * quantity,
+      quantity: Number(quantity),
     };
-    setCartItems([...cartItems, newItem]);
+    setCartItems([...cartItems, item]);
   };
 
   return (
     <div>
-      <Navbar cartItems={cartItems} />
+      <Navbar cartCount={cartItems.length} />
       <Homescreen addToCart={addToCart} />
     </div>
   );
 }
 
-export default App;
+export default MainApp;
